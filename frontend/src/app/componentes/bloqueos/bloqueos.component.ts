@@ -18,7 +18,7 @@ export class BloqueosComponent implements OnInit{
   };
 
   pageActual:number=1
-
+  numero:number = this.bloqueoServicio.bloqueos.length
   getBloqueos(){
     this.bloqueoServicio.getBloqueos()
       .subscribe(res => {
