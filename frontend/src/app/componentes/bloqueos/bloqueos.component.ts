@@ -23,6 +23,7 @@ export class BloqueosComponent implements OnInit{
     this.bloqueoServicio.getBloqueos()
       .subscribe(res => {
         this.bloqueoServicio.bloqueos = res as Bloqueo[];
+        console.log('res.lenght');
       })
   }
   ngOnInit() {
